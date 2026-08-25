@@ -1,30 +1,32 @@
+import Header from "./components/Header";
+import Progress from "./components/Progress";
+import Focus from "./components/Focus";
+import Goal from "./components/Goal";
+import DaysRemaining from "./components/DaysRemaining";
+
 function App() {
-  const currentDay = 1;
-  const totalDays = 90;
+  const currentDay = 4;
+  const totalDays = 100;
   const currentFocus = "React + JSX";
   const goal = "Become a full-stack developer";
 
   return (
     <>
-      {/* Main heading */}
-      <h1 className="title">90-Day Developer Journey</h1>
+      <Header />
 
-      {/* Current progress */}
-      <p className="progress">
-        Progress: {((currentDay / totalDays) * 100).toFixed(2)}%
-      </p>
+      <Progress
+        currentDay={currentDay}
+        totalDays={totalDays}
+      />
 
-      {/* Current focus */}
-      <h3>Current Focus</h3>
-      <p>{currentFocus}</p>
+      <Focus currentFocus={currentFocus} />
 
-      {/* Goal */}
-      <h3>Goal</h3>
-      <p>{goal}</p>
+      <Goal goal={goal} />
 
-      {/* Remaining days */}
-      <h3>Days Remaining</h3>
-      <p>{totalDays - currentDay}</p>
+      <DaysRemaining
+        currentDay={currentDay}
+        totalDays={totalDays}
+      />
     </>
   );
 }
