@@ -1,8 +1,5 @@
-function Goal ({goal}){
-
-    return(
-        <p>what is your goal= {goal}</p>
-    );
+function Goal({ goal }) {
+  return <p>Goal = {goal}</p>;
 }
 
 export default Goal;

@@ -1,9 +1,5 @@
-function Focus( {Tolearn}){
-
-    return(
-        <p> current focus = {Tolearn}
-        </p>
-    );
+function Focus({ currentFocus }) {
+  return <p>Current Focus = {currentFocus}</p>;
 }
 
-    export default Focus;
+export default Focus;

@@ -1,9 +1,5 @@
-
-function Header () {
-
-    return (
-        <h1> 90-day developer journey </h1>
-    );
+function Header() {
+  return <h1>90-Day Developer Journey</h1>;
 }
 
-    export default Header;
+export default Header;
